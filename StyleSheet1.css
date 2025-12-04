@@ -1,0 +1,78 @@
+﻿<style >
+/* =============================
+        HIGH-END FUTURISTIC THEME
+        ============================= */
+body {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto;
+    background: radial-gradient(circle at top, #0b0f19, #05060a 70%);
+    color: #e2e8f0;
+    padding-bottom: 50px;
+}
+
+/* Futuristic Glass Cards */
+.card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 24px;
+    transition: all .25s ease;
+}
+
+    .card:hover {
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+        border-color: rgba(0,255,255,0.25);
+    }
+
+/* Neon Accent Buttons */
+.btn-primary {
+    background: linear-gradient(90deg, #00eaff, #00b3ff);
+    color: #0a0f18;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 10px 20px;
+    transition: 0.25s;
+}
+
+    .btn-primary:hover {
+        background: linear-gradient(90deg, #00b3ff, #008cff);
+        box-shadow: 0 0 14px #00d9ff;
+    }
+
+.btn-outline {
+    border: 1px solid #00d9ff;
+    color: #00d9ff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: .25s;
+}
+
+    .btn-outline:hover {
+        background: rgba(0,217,255,0.15);
+        box-shadow: 0 0 10px #00d9ff;
+    }
+
+/* Neon Headings */
+h1, h2, h3 {
+    color: #f1f5f9;
+    letter-spacing: .5px;
+    text-shadow: 0 0 8px rgba(0,195,255,0.45);
+}
+
+/* Navigation Bar Upgrade */
+header {
+    background: rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+}
+
+/* Futuristic Divider */
+.divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00d9ff, transparent);
+    margin: 30px 0;
+}
+
+</style >

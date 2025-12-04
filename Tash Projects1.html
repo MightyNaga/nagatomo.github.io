@@ -1,0 +1,292 @@
+﻿<!doctype<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Obscur Tech — High-End PCs & Components</title>
+  <meta name="description" content="High-end desktop PCs, custom builds, cutting-edge components and professional-grade support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--accent:#7c3aed}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+    .glass{background:rgba(255,255,255,0.06);backdrop-filter:blur(6px)}
+    .card-shadow{box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 text-slate-100 min-h-screen">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 backdrop-blur-sm glass border-b border-slate-700">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center font-bold text-white">OT</div>
+        <div>
+          <div class="font-extrabold text-lg leading-tight">Obscur Tech</div>
+          <div class="text-xs text-slate-400 -mt-1">Performance. Elegance. Precision.</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#builds" class="hover:text-white">Builds</a>
+        <a href="#components" class="hover:text-white">Components</a>
+        <a href="#gallery" class="hover:text-white">Gallery</a>
+        <a href="#support" class="hover:text-white">Support</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button id="searchToggle" class="p-2 rounded-md hover:bg-slate-700/50"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z"/></svg></button>
+        <a href="#contact" class="hidden md:inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-violet-600 to-indigo-600 text-sm font-semibold shadow">Contact</a>
+        <button id="menuBtn" class="md:hidden p-2 rounded-md hover:bg-slate-700/50"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-700">
+      <div class="px-6 py-4 flex flex-col gap-3 text-sm">
+        <a href="#builds">Builds</a>
+        <a href="#components">Components</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#support">Support</a>
+        <a href="#contact" class="mt-2 inline-block px-4 py-2 rounded bg-violet-600 text-sm font-medium">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <section class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">High-end Desktop PCs for Creators & Enthusiasts</h1>
+        <p class="mt-4 text-slate-300 max-w-xl">Custom builds engineered for maximum performance and silent operation. From content creation to competitive gaming — we tune every system for real-world workloads.</p>
+        <div class="mt-6 flex gap-4">
+          <a href="#builds" class="px-5 py-3 rounded-lg bg-gradient-to-r from-violet-600 to-indigo-600 font-semibold shadow">Explore Builds</a>
+          <a href="#components" class="px-5 py-3 rounded-lg border border-slate-700 text-slate-200">Shop Components</a>
+        </div>
+        <ul class="mt-8 grid grid-cols-2 gap-3 text-slate-300 text-sm max-w-md">
+          <li>✅ Liquid-cooled & whisper-quiet</li>
+          <li>✅ Factory burn-in & benchmarking</li>
+          <li>✅ 3-year warranty & global support</li>
+          <li>✅ Custom cable sleeving & RGB layout</li>
+        </ul>
+      </div>
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden card-shadow">
+          <img src="https://images.unsplash.com/photo-1611119933561-0eb2b8ae2b4c?q=80&w=1600&auto=format&fit=crop" alt="High-end PC" class="w-full h-80 object-cover brightness-90" />
+        </div>
+        <div class="absolute -bottom-8 left-6 bg-gradient-to-r from-slate-800/70 to-slate-900/60 p-4 rounded-xl border border-slate-700 flex gap-4 items-center">
+          <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-pink-500 to-orange-400 flex items-center justify-center font-bold">GTX</div>
+          <div>
+            <div class="text-sm text-slate-300">Signature Build</div>
+            <div class="font-semibold">Aurora Fury X</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTERS & PRODUCTS -->
+    <section id="builds" class="mt-20">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">Featured Builds</h2>
+        <div class="flex items-center gap-3">
+          <select id="sort" class="bg-slate-800/40 border border-slate-700 text-sm rounded px-3 py-2">
+            <option value="popular">Most Popular</option>
+            <option value="price-desc">Price: High — Low</option>
+            <option value="price-asc">Price: Low — High</option>
+          </select>
+          <input id="search" type="search" placeholder="Search builds" class="bg-slate-800/40 border border-slate-700 text-sm rounded px-3 py-2" />
+        </div>
+      </div>
+
+      <div id="products" class="mt-6 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Product cards inserted by JS -->
+      </div>
+    </section>
+
+    <!-- COMPONENT HIGHLIGHTS -->
+    <section id="components" class="mt-20">
+      <h2 class="text-2xl font-bold">Component Highlights</h2>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl glass border border-slate-700">
+          <h3 class="font-semibold">NVIDIA RTX 40 Series</h3>
+          <p class="mt-2 text-sm text-slate-300">Real-time ray tracing and AI acceleration for creatives and gamers.</p>
+        </div>
+        <div class="p-6 rounded-xl glass border border-slate-700">
+          <h3 class="font-semibold">3rd Gen Threadripper</h3>
+          <p class="mt-2 text-sm text-slate-300">Massive core counts for rendering, compiling, and heavy multitasking.</p>
+        </div>
+        <div class="p-6 rounded-xl glass border border-slate-700">
+          <h3 class="font-semibold">PCIe Gen 5 NVMe</h3>
+          <p class="mt-2 text-sm text-slate-300">Ultra-low latency storage to keep your workflows snappy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="mt-20">
+      <h2 class="text-2xl font-bold">Gallery</h2>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img class="rounded-lg h-40 object-cover" src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop" alt="Gallery 1">
+        <img class="rounded-lg h-40 object-cover" src="https://images.unsplash.com/photo-1612831455547-2bd7ef3b3d9e?q=80&w=800&auto=format&fit=crop" alt="Gallery 2">
+        <img class="rounded-lg h-40 object-cover" src="https://images.unsplash.com/photo-1602524812687-1f5b2d7a0b5f?q=80&w=800&auto=format&fit=crop" alt="Gallery 3">
+        <img class="rounded-lg h-40 object-cover" src="https://images.unsplash.com/photo-1632163191534-5d1b4bff3b2a?q=80&w=800&auto=format&fit=crop" alt="Gallery 4">
+      </div>
+    </section>
+
+    <!-- SUPPORT & CONTACT -->
+    <section id="support" class="mt-20 grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h2 class="text-2xl font-bold">Support & Services</h2>
+        <p class="mt-4 text-slate-300">We offer professional RMA, system optimization, BIOS tuning and lifetime build configuration support for our customers.</p>
+        <ul class="mt-6 grid grid-cols-1 gap-3 text-sm text-slate-300">
+          <li>• On-site assembly & testing</li>
+          <li>• Custom watercooling loops</li>
+          <li>• Overclocking & stability testing</li>
+        </ul>
+      </div>
+      <form id="contact" class="p-6 rounded-xl glass border border-slate-700" onsubmit="event.preventDefault(); submitContact()">
+        <h3 class="font-semibold">Get a Quote</h3>
+        <p class="text-sm text-slate-300 mt-1">Tell us what you need and we'll recommend a build.</p>
+        <div class="mt-4 grid gap-3">
+          <input id="name" required placeholder="Your name" class="bg-transparent border border-slate-700 rounded px-3 py-2" />
+          <input id="email" type="email" required placeholder="Email address" class="bg-transparent border border-slate-700 rounded px-3 py-2" />
+          <select id="budget" class="bg-transparent border border-slate-700 rounded px-3 py-2">
+            <option value="">Preferred budget</option>
+            <option value="1500">$1,500+</option>
+            <option value="3000">$3,000+</option>
+            <option value="5000">$5,000+</option>
+          </select>
+          <textarea id="notes" rows="4" placeholder="Tell us about your use case" class="bg-transparent border border-slate-700 rounded px-3 py-2"></textarea>
+          <div class="flex items-center gap-3">
+            <button class="px-4 py-2 rounded bg-violet-600 font-medium">Request Quote</button>
+            <button type="button" onclick="document.getElementById('contact').reset()" class="px-4 py-2 rounded border border-slate-700">Reset</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-20 py-8 border-t border-slate-800 text-sm text-slate-400">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+        <div>© <strong>Obscur Tech</strong> — Built for creators.</div>
+        <div class="flex gap-4 mt-4 md:mt-0">
+          <a href="#" class="hover:text-white">Privacy</a>
+          <a href="#" class="hover:text-white">Terms</a>
+          <a href="#" class="hover:text-white">Shipping</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- PRODUCT MODAL -->
+  <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black/60 z-50">
+    <div class="bg-slate-900 rounded-2xl p-6 max-w-3xl w-full">
+      <button id="modalClose" class="ml-auto block text-slate-400">Close ✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script>
+    // Sample product data
+    const PRODUCTS = [
+      {id:1,name:'Aurora Fury X',price:5199,desc:'Intel i9-14900K, 64GB DDR5, RTX 4090, 2TB PCIe 4.0 NVMe',img:'https://images.unsplash.com/photo-1611119933561-0eb2b8ae2b4c?q=80&w=1200&auto=format&fit=crop'},
+      {id:2,name:'Creator Pro 7900',price:7599,desc:'AMD Threadripper, 128GB RAM, Radeon Pro W6800, 4TB NVMe',img:'https://images.unsplash.com/photo-1616573214707-4d8e4c5e0f90?q=80&w=1200&auto=format&fit=crop'},
+      {id:3,name:'Stealth Gamer S',price:2899,desc:'Ryzen 9 7950X, 32GB DDR5, RTX 4080, 1TB NVMe',img:'https://images.unsplash.com/photo-1602524812687-1f5b2d7a0b5f?q=80&w=1200&auto=format&fit=crop'},
+      {id:4,name:'Mini Studio M',price:1999,desc:'Intel i7, 32GB, RTX 4070, 1TB NVMe',img:''}
+    ];
+
+    const productsEl = document.getElementById('products');
+    const searchInput = document.getElementById('search');
+    const sortSelect = document.getElementById('sort');
+
+    function currency(n){ return '$' + n.toLocaleString(); }
+
+    function renderProducts(list){
+      productsEl.innerHTML = '';
+      list.forEach(p => {
+        const card = document.createElement('article');
+        card.className = 'rounded-xl overflow-hidden glass border border-slate-700 p-0';
+        card.innerHTML = `
+          <div class="h-48 w-full overflow-hidden">
+            <img src="${p.img}" alt="${p.name}" class="w-full h-48 object-cover" />
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold">${p.name}</h3>
+            <p class="text-sm text-slate-300 mt-1">${p.desc}</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="font-semibold">${currency(p.price)}</div>
+              <div class="flex gap-2">
+                <button onclick="openModal(${p.id})" class="px-3 py-1 rounded bg-slate-800/60 text-sm">Details</button>
+                <button onclick="addToCart(${p.id})" class="px-3 py-1 rounded bg-violet-600 text-sm">Buy</button>
+              </div>
+            </div>
+          </div>
+        `;
+        productsEl.appendChild(card);
+      })
+    }
+
+    function openModal(id){
+      const p = PRODUCTS.find(x=>x.id===id);
+      document.getElementById('modalContent').innerHTML = `
+        <div class="grid md:grid-cols-2 gap-6 items-start">
+          <img src="${p.img}" alt="${p.name}" class="rounded-lg w-full h-64 object-cover" />
+          <div>
+            <h3 class="text-xl font-bold">${p.name}</h3>
+            <p class="text-slate-300 mt-2">${p.desc}</p>
+            <div class="mt-4 font-semibold text-lg">${currency(p.price)}</div>
+            <ul class="mt-4 text-sm text-slate-300">
+              <li>• Factory stress-tested</li>
+              <li>• 3-year parts & labor warranty</li>
+              <li>• Free cable customisation</li>
+            </ul>
+            <div class="mt-6 flex gap-3">
+              <button onclick="addToCart(${p.id})" class="px-4 py-2 rounded bg-violet-600">Buy Now</button>
+              <button onclick="closeModal()" class="px-4 py-2 rounded border border-slate-700">Close</button>
+            </div>
+          </div>
+        </div>
+      `;
+      document.getElementById('modal').classList.remove('hidden');
+      document.getElementById('modal').classList.add('flex');
+    }
+    function closeModal(){ document.getElementById('modal').classList.add('hidden'); document.getElementById('modal').classList.remove('flex'); }
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+
+    function addToCart(id){
+      const p = PRODUCTS.find(x=>x.id===id);
+      alert(p.name + ' added to cart (demo).');
+    }
+
+    // simple search & sort
+    function applyFilters(){
+      const q = searchInput.value.trim().toLowerCase();
+      let list = PRODUCTS.filter(p => p.name.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q));
+      if(sortSelect.value === 'price-desc') list.sort((a,b)=>b.price-a.price);
+      if(sortSelect.value === 'price-asc') list.sort((a,b)=>a.price-b.price);
+      renderProducts(list);
+    }
+    searchInput.addEventListener('input', applyFilters);
+    sortSelect.addEventListener('change', applyFilters);
+
+    // mobile menu
+    document.getElementById('menuBtn').addEventListener('click', ()=>{
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    // search toggle (simple focus)
+    document.getElementById('searchToggle').addEventListener('click', ()=>{ document.getElementById('search').focus(); window.scrollTo({top:200,behavior:'smooth'}) });
+
+    // contact form demo
+    function submitContact(){
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const budget = document.getElementById('budget').value;
+      alert('Thanks ' + name + '! We\'ll email you a quote at ' + email + (budget?(' for budget $'+budget):'') );
+      document.getElementById('contact').reset();
+    }
+
+    // initial render
+    renderProducts(PRODUCTS);
+  </script>
+</body>
+</html>
+
